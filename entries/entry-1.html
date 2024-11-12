@@ -1,0 +1,33 @@
+<body>
+  <main>
+      <div class="music-controls">
+        <button id="playButton" class="play"></button>
+        <button id="pauseButton" class="pause" style="display: none;"></button>
+      </div>
+      
+      <audio id="musicPlayer" src="your-music-file.mp3"></audio>
+      
+      <script>
+        const musicPlayer = document.getElementById('musicPlayer');
+        const playButton = document.getElementById('playButton');
+        const pauseButton = document.getElementById('pauseButton');
+      
+        playButton.addEventListener('click', () => {
+          musicPlayer.play();
+          playButton.style.display = 'none';  // Hide play button
+          pauseButton.style.display = 'inline';  // Show pause button
+        });
+      
+        pauseButton.addEventListener('click', () => {
+          musicPlayer.pause();
+          playButton.style.display = 'inline';  // Show play button
+          pauseButton.style.display = 'none';  // Hide pause button
+        });
+      </script>
+      
+    </div>
+  </main>
+</body>
+
+
+

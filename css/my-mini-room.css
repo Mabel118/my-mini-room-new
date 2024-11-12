@@ -1,0 +1,67 @@
+.main-grid { 
+  display: grid; 
+  grid-template-columns: 1.2fr repeat(9, 1fr) 1.2fr; 
+  grid-template-rows: 0.95fr repeat(3, 1fr) 0.5fr 1fr 1.05fr; 
+  grid-column-gap: 5px;
+  grid-row-gap: 5px; 
+  }
+  .div1 { grid-area: 2 / 2 / 3 / 3; }
+  .div2 { grid-area: 2 / 6 / 3 / 7; }
+  .div3 { grid-area: 2 / 10 / 3 / 11; }
+  .div4 { grid-area: 3 / 4 / 4 / 5; }
+  .div5 { grid-area: 3 / 8 / 4 / 9; }
+  .div6 { grid-area: 4 / 3 / 5 / 4; }
+  .div7 { grid-area: 4 / 9 / 5 / 10; }
+  .div8 { grid-area: 6 / 2 / 7 / 3; }
+  .div9 { grid-area: 6 / 6 / 7 / 7; }
+  .div10 { grid-area: 6 / 10 / 7 / 11; }
+  .div11 { grid-area: 4 / 6 / 5 / 7; }
+  .image-container {
+    position: relative; /* Ensures that the image is positioned relative to the container */
+}
+
+.centered-image {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 250px; /* Adjust width */
+    height: auto; /* Keeps aspect ratio */
+    z-index: 1000; /* Ensures it is on top of the grid */
+}
+
+body {
+  background: linear-gradient(to bottom, #f9f4ff 0%, #5d4b7b 90%);
+  /* You can replace the color codes with your preferred colors */
+}
+
+.music-controls {
+  text-align: center; /* Center the controls */
+  margin-top: 20px;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.play {
+  background-image: "images/mmr-play-button.png"; /* Path to your play button image */
+}
+
+.pause {
+  background-image: url('pause-icon.png'); /* Path to your pause button image */
+}
+
+button:focus {
+  outline: none; /* Remove outline on focus */
+}
+
+
+
+  
