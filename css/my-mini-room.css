@@ -35,33 +35,24 @@ body {
   /* You can replace the color codes with your preferred colors */
 }
 
-.music-controls {
-  text-align: center; /* Center the controls */
-  margin-top: 20px;
+/* Container for the link */
+.div1, .div2, .div3, .div4, .div5, .div6, .div7, .div8, .div9, .div10 {
+  display: grid;
+  place-items: center; /* Center image in the grid item */
+  width: 120px; /* Set the width of the image */
+  height: 120px; /* Set the height of the image */
+  object-position: center;
+  border-radius: 8px; /* Optional: rounded corners */
+  transition: transform 0.2s ease-in-out; /* Optional: smooth transition */
+  background-size: cover; /* Make sure the background image covers the div */
+      background-position: center; /* Center the image inside the div */
+
 }
 
-button {
-  background-color: transparent;
-  border: none;
+/* Optional: Add a hover effect */
+.div1:hover, .div2:hover, .div3:hover, .div4:hover, .div5:hover, .div6:hover, .div7:hover, .div8:hover, .div9:hover, .div10:hover {
+  transform: scale(1.1); /* Scale the image slightly when hovered */
   cursor: pointer;
-  width: 50px;
-  height: 50px;
-  background-size: contain;
-  background-repeat: no-repeat;
-}
-
-.play {
-  background-image: "images/mmr-play-button.png"; /* Path to your play button image */
-}
-
-.pause {
-  background-image: url('pause-icon.png'); /* Path to your pause button image */
-}
-
-button:focus {
-  outline: none; /* Remove outline on focus */
 }
 
 
-
-  
