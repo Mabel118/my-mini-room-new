@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mini Library Time</title>
+  <link rel="stylesheet" href="../css/styles.css">
+  <link rel="stylesheet" href="../css/entry-8.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="/fonts/css/font-awesome.css">
+
+</head>
+
+<div id="back-button-container">
+  <img id="back-button" src="../images/back-button.png" alt="Back Button">
+</div>
+
+<body>
+  <div id="container">
+
+      <div id="list-header">
+
+          <div id="addNoteDiv" onclick="popup()">
+              <i class="fa-solid fa-plus"></i>
+          </div>
+
+      </div>
+      
+      <div id="list-container">
+          <ul id="notes-list"></ul>
+      </div>
+  </div>
+
+  <div class="music-player-container">
+    <div class="bg"></div>
+    <div class="bg-mask"></div>
+    <div class="player">
+        <div class="player-track">
+            <div class="album-name">Bésame Mucho</div>
+            <div class="track-name">Lisa Ono - Album: Romance Latino Vol.3 -Cuba Caliente Y Su Ritmo Sabroso</div>
+            <div class="track-time">
+                <div class="current-time">00:00</div>
+                <div class="total-time">03:17</div>
+            </div>
+            <div class="progress-box">
+                <div class="hover-time">00:36</div>
+                <div class="hover-bar"></div>
+                <div class="progress-bar"></div>
+            </div>
+        </div>
+        <div class="player-content">
+          <div class="album-cover">
+              <img src="../images/CAS-K.jpg" alt="K Album Cover" class="active">
+              <img src="../images/LisaOno-BesameMucho.jpg" alt="Besame Mucho Album Cover">
+              <img src="../images/Laurel-SDF.jpg" alt="Scream Drive Faster Album Cover">
+              <img src="../images/DC-neverenough.png" alt="Let Me Go Album Cover">
+              <img src="../images/Igo_Tyler,_the_Creator.jpg" alt="IGOR Album Cover">
+              <img src="../images/APLMate.com - A Night To Remember - beabadoobee_ Laufey.jpg" alt="A Night to Remember Album Cover">
+              <img src="../images/APLMate.com - Courage - Lianne La Havas.jpg" alt="Courage Album Cover">
+              <img src="../images/APLMate.com - From The Start - Laufey.jpg" alt="From the Start Album Cover">
+              <img src="../images/APLMate.com - Happiness - Sarz_ Asake_ Gunna.jpg" alt="Happiness Album Cover">
+              <img src="../images/APLMate.com - Salvatore - Lana Del Rey.jpg" alt="Salvatore Album Cover">
+              <img src="../images/APLMate.com - September Rain (2018 Remaster) - Makoto Matsushita.jpg" alt="September Rain Album Cover">
+              <img src="../images/APLMate.com - Showa - Kizz Daniel.jpg" alt="Showa Album Cover">
+          </div>
+            <div class="play-controls">
+                <div class="control">
+                    <div class="button play-prev">
+                        <i class="fa fa-step-backward"></i>
+                    </div>
+                </div>
+                <div class="control">
+                    <div class="button play-pause">
+                        <i class="fa fa-play"></i>
+                    </div>
+                </div>
+                <div class="control">
+                    <div class="button play-next">
+                        <i class="fa fa-step-forward"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+  <script src="../js/script.js"></script>
+  <script src="../js/entry-7.js"></script>
+  
+</body>
+</html>
+
+
