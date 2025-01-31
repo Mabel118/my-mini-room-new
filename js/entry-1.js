@@ -50,8 +50,9 @@ const trackNames = [
 // Variables
 let audio = new Audio();
 audio.loop = false;
-let currentIndex = -1;
+let currentIndex = 0;
 let progressLocation = 0;
+
 
 // Initialize player
 function initPlayer() {
@@ -76,20 +77,18 @@ function initPlayer() {
 
 // Play or pause the audio
 function togglePlayPause() {
-    setTimeout(() => {
-        if (audio.paused) {
-            playerTrack.classList.add('active');
-            playPauseBtn.querySelector('.fa').classList = 'fa fa-pause';
-            albumCover.classList.add('active');
-            audio.play();
-        } else {
-            playerTrack.classList.remove('active');
-            playPauseBtn.querySelector('.fa').classList = 'fa fa-play';
-            albumCover.classList.remove('active');
-            audio.pause();
-        }
-    }, 300);
+    if (audio.paused) {
+        audio.play();
+        playPauseBtn.querySelector('.fa').classList = 'fa fa-pause';
+    } else {
+        audio.pause();
+        playPauseBtn.querySelector('.fa').classList = 'fa fa-play';
+    }    
 }
+
+audio.addEventListener('error', function () {
+    console.error('Audio file could not be loaded');
+});
 
 // Show hover time on the progress bar
 function showHover(e) {
